@@ -24,15 +24,16 @@ Or install it yourself as:
 ## Usage
 At the top of your partials, simply call the method `partial_parameters` and list your required and optional parameters:
 
+
+Erb example:
 ```erb
-  <%# erb %>
   <% partial_parameters { required(:name); required(:age); optional(:height) }%>
 ```
 
 or
 
+Slim example:
 ```slim
-  / Slim
   - partial_parameters do
     - required(:name)
     - required(:age)
