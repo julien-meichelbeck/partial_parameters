@@ -1,6 +1,7 @@
 
 # PartialParameters
 Make your partials reusable and self-documented by validating the given parameters in development and test environments.
+If a required parameter is missing or an unknown parameter is given, an exception will be raised.
 
 ![](https://api.travis-ci.org/julien-meichelbeck/partial_parameters.svg?branch=master)
 
@@ -21,15 +22,17 @@ Or install it yourself as:
     $ gem install partial_parameters
 
 ## Usage
-In your partials, simply call the method `partial_parameters` and list your required and optional parameters:
+At the top of your partials, simply call the method `partial_parameters` and list your required and optional parameters:
 
 ```erb
+  # erb
   <% partial_parameters { required(:name); required(:age); optional(:height) }%>
 ```
 
 or
 
 ```slim
+  # slim
   - partial_parameters do
     - required(:name)
     - required(:age)
