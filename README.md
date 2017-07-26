@@ -30,8 +30,6 @@ Erb example:
   <% partial_parameters { required(:name); required(:age); optional(:height) }%>
 ```
 
-or
-
 Slim example:
 ```slim
   - partial_parameters do
