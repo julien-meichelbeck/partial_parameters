@@ -39,7 +39,7 @@ Slim example:
 ```
 
 ### Strict mode
-By default strict mode is enable and an error will be raised if an unknown parameter has been passed to the partial. Of course, you can disable the strict mode:
+By default strict mode is enabled and an error will be raised if an unknown parameter has been passed to the partial. Of course, you can disable the strict mode:
 ```slim
   - partial_parameters(strict: false) do
     - required(:name)
