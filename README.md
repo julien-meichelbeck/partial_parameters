@@ -21,7 +21,7 @@ Or install it yourself as:
 
     $ gem install partial_parameters
 
-Just include the module `PartialParameters` into your ApplicationHelper and you are ready to go!
+And you are ready to go!
 
 ## Usage
 At the top of your partials, simply call the method `partial_parameters` and list your required and optional parameters:

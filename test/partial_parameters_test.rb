@@ -1,7 +1,8 @@
 require 'test_helper'
+require 'partial_parameters/action_view/helpers'
 
 class PartialParametersTest < Minitest::Test
-  include PartialParameters
+  include PartialParameters::ActionView::Helpers
 
   def test_no_check_in_production
     skip
